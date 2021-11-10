@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <nav class="nav-wrapper" id="luz">
+        <div class="container">
+            <a href="#" class="brand-logo">Gatos</a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#mesa">Imagenes</a></li>
+                <li><a href="#calma">Descripcion</a></li>
+                <li><a href="#patas">Acerca de</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <div class="carousel" id="mesa">
+        <a class="carousel-item" href="#one!"><img src="img/gatito.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/gato.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/misu.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/pequeño.jpg"></a>
+    </div>
+
+    <div id="calma">
+        <div class="container-md p-5">
+            <div class="center pt-5">
+                <h3 class="text-center pb-5 pt-5 h1">Gatitos</h3>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/niño.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero ipsum dolore dolorum illo facilis consequatur, rerum ut beatae reiciendis. Rem quia cumque totam atque ut tempore. Velit, vitae iure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/pepa.jpg">
+                        </div>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ea sapiente consectetur sit a recusandae quos necessitatibus, eos provident magnam sed quibusdam. Minus incidunt aliquam deserunt pariatur accusamus totam quaerat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/patita.jpg">
+                        </div>
+                        <div class="card-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates expedita harum iusto blanditiis nesciunt necessitatibus, magnam eaque, accusantium minima ut et, illo repellendus temporibus maiores. Eos cum alias corrupti nisi!</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="slider" id="patas">
+        <ul class="slides">
+          <li>
+            <img src="img/bigotes.jpg"> 
+          </li>
+          <li>
+            <img src="img/ojitos.jpg">
+          </li>
+          <li>
+            <img src="img/orejas.jpg"> 
+          </li>
+          <li>
+            <img src="img/mano.jpg"> 
+          </li>
+        </ul>
+    </div>
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="#mesa">Imagenes</a></li>
+        <li><a href="#calma">Descripcion</a></li>
+        <li><a href="#patas">Acerca de</a></li>
+    </ul>
+
+    <footer class="page-footer" id="peludo">
+        <div class="container">
+            <div class="row justify-content-md-center py-5">
+                <div class="text-center font-weight-light">
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi ullam cupiditate id, porro dolorem, asperiores ipsam unde exercitationem perspiciatis laboriosam delectus cumque quasi molestiae voluptas quos modi. Eveniet, accusamus!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container w-50 pt-5">
+                © 2001 - 2020. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+        document.addEventListener('DOMContentLoaded', function(){
+           M.AutoInit();
+        });
+   </script> 
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.carousel');
+           var instances = M.Carousel.init(elems);
+        }); 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
+    });
+    </script>
+</body>
+</html>
